@@ -3,9 +3,10 @@ import csv
 import re
 import time
 from urllib.parse import urljoin
+import os
 
 # Replace with your Google Places API key
-API_KEY = "AIzaSyA3Qscf_M3HHSGykf3YRZbSeg7jXOfXXcs"
+API_KEY = os.getenv("API_KEY")
 
 # Coordinates for Montpellier, France
 LATITUDE = 43.610769
